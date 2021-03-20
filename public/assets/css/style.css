@@ -5,14 +5,16 @@
 }
 
 body{
-  /*background: navy;*/
+  background: navy;
   background-image: url('https://cdn.mos.cms.futurecdn.net/TeHDvyZxpKKpfZDQoKUySj-970-80.jpg.webp');
   background-size:cover;
   background-repeat: no-repeat;
+  height: 100vh;
 }
 
 
 /*for navBar*/
+
   .form_control{
     margin: 0 0px 0px 100px;
     /*background: red;*/
@@ -23,12 +25,33 @@ body{
     line-height: auto;
     width: 40%;
     margin: 10vh 30%; 
-    padding: 50px;
+    padding: 10px;
     border-radius: 10px;
+  }
+  .form_container_left{
+    top: 0px;
+    left: 0px;
+    width: 40%;
+    margin: 20vh 0% 0 5%;
+    position: absolute;
+    color: #fff;
+  }
+  .form_container_left p, button{
+    margin:1em 0;
+  }
+  .form_container_left button{
+    background: #d4d405;
+    width: 10em;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    line-height: 3em;
   }
   .form_container h1{
     text-align: center;
-    font-family: arial;
+    font-family: sans-serif;
   }
 #row_map, #ander{
   background: #000;
@@ -91,11 +114,12 @@ body{
     color: #000;
   }
 
+
 @media (min-width: 320px){
   .form_container{
     width: 90%;
     margin: 10vh 5%; 
-    padding: 10px;
+    
   }
   .form_control {
     margin: 0 0px 0px 20%;
@@ -116,7 +140,6 @@ body{
   .form_container{
     width: 80%;
     margin: 10vh 10%; 
-    padding: 10px;
   }
   .form_control {
     margin: 0 0px 0px 20%;
@@ -131,15 +154,14 @@ body{
   .form_container{
     width: 60%;
     margin: 10vh 20%; 
-    padding: 10px;
+    height: 30em;
   }
 }
 
 @media (min-width: 1020px){
   .form_container{
-    width: 30%;
-    margin: 10vh 35%; 
-    padding: 10px;
+    width: 40%;
+    margin: 10vh 5% 10vh 55%; 
     background: navy;
     color: #fff;
   }
@@ -148,9 +170,9 @@ body{
   }
   input[type=submit]{
     width: 50%;
-    background: #000;
+    background: #d4d405;
     margin-left: 25%;
-    border-radius: 20px;
+    border-radius: 5px;
   }
   input[type=submit]:hover {
     background: gray;
