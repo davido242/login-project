@@ -19,16 +19,15 @@ header {
 }
 nav{
   padding: 10px;
-  /*margin: 0px 0px 20vh 0px;*/
 }
 .logo{
   width: 10%;
   height: 80px;
   float: left;
+  padding: 1em 3em;
 }
 .logo img{
-  width: 100%;
-  margin-left: 3%;
+  /*margin: 1em auto;*/
   height: 50px;
 }
 .menu-holder{
