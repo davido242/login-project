@@ -1,3 +1,10 @@
+<div class="footer">
+<h3>My Footer Section</h3>
+</div>
 
-<h3>This is my Footer section</h3>
+
+
+
+<!-- Java script link -->
+
 <script src="<?php echo base_url('assets/js/main.js');?>"></script>

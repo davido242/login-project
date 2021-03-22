@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Login Page</title>
   <?php echo view("piller/header");?>
 </head>
 <body>
-<h2>My login Page</h2>
+<?php echo view("piller/nav_bar")?>
 <?php echo view("form");?>
 
 

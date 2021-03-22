@@ -1,0 +1,108 @@
+.nav-holder{
+  width: 100%;
+  height: 6.25em;
+  background-color: #000;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /*margin: 0px 0px 20vh 0px;*/
+  }
+.logo{
+  width: 10%;
+  height: 80px;
+  float: left;
+  }
+.logo img{
+  width: 100%;
+  margin-left: 3%;
+  height: 50px;
+  }
+.menu-holder{
+  width: 80%;
+  height: 80px;
+  float: right;
+  padding-left: 100px;
+  background-color: #fff;
+  }
+.menu-holder ul li{
+  display: inline-block;
+  position: relative;
+  float: left;
+  text-align: center;
+  width: 150px;
+   transition: .2s ease-out;
+   cursor: pointer;
+  }
+.menu-holder ul li a{
+  text-decoration: none;
+  color: #436bdc;
+  font-size: 18px;
+  font-family: arial;
+  line-height: 80px;
+  }
+.menu-holder ul li a:hover {
+  text-decoration: none;
+  }
+.menu-holder ul li:hover{
+  background-color: #000;
+  }
+  #barsbtn, #check{
+  font-size: 70px;
+  float: right;
+  margin:10px 30px 0 0px;
+  display: none;
+  cursor: pointer;
+  }
+
+@media (min-width: 300px){
+  .menu-holder{
+    width: 100%;
+    height: 100vh;
+    left: -120%;
+    top: 80px;
+    position: absolute;
+    background-color: #e68a01;
+    margin-top: 20px;
+    padding-left: 100px;
+    transition: all .5s ease-out;
+    z-index: 8;
+    }
+  .nav-holder{
+    padding: 0px;
+    }
+  .logo{
+    width: 30%;
+    }
+
+  #barsbtn{
+    display: block;
+    color: #e68a01;
+    }
+  .menu-holder ul ul{
+    position: relative;
+    }
+  .menu-holder ul li{
+    display: block;
+    float: none;
+  }
+  .menu-holder ul li a{
+    font-size: 18px;
+    line-height: 40px;
+    color: #fff;
+  }
+  #check:checked ~ .menu-holder{
+    display: block;
+    left: -10px;
+  }
+  #btn-btn{
+  width: 50%;
+  }
+
+}
+@media (min-width: 500px){
+    /*.menu-holder{
+    left: -430px;
+    padding-left: 10px;
+  }*/
+}
