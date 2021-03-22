@@ -6,6 +6,71 @@ body{
 }
 
 /*for navBar*/
+header {
+  position: fixed;
+  width: 100%;
+  height: 6.25em;
+  background-color: #000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+nav{
+  padding: 10px;
+  /*margin: 0px 0px 20vh 0px;*/
+}
+.logo{
+  width: 10%;
+  height: 80px;
+  float: left;
+}
+.logo img{
+  width: 100%;
+  margin-left: 3%;
+  height: 50px;
+}
+.menu-holder{
+  width: 80%;
+  height: 80px;
+  float: right;
+  padding-left: 100px;
+  background-color: #fff;
+}
+.menu-holder ul li{
+  display: inline-block;
+  position: relative;
+  float: left;
+  text-align: center;
+  width: 150px;
+   transition: .2s ease-out;
+   cursor: pointer;
+}
+.menu-holder ul li a{
+  text-decoration: none;
+  color: #436bdc;
+  font-size: 18px;
+  font-family: arial;
+  line-height: 80px;
+}
+.menu-holder ul li a:hover {
+  text-decoration: none;
+}
+.menu-holder ul li:hover{
+  background-color: #000;
+}
+  #barsbtn, #check{
+  font-size: 70px;
+  float: right;
+  margin:10px 30px 0 0px;
+  display: none;
+  cursor: pointer;
+}
+/*end of Navbar*/
+
+
+/*form section*/
 .fluid-all{
   background: navy;
   background-image: url('https://cdn.mos.cms.futurecdn.net/TeHDvyZxpKKpfZDQoKUySj-970-80.jpg.webp');
@@ -62,10 +127,6 @@ body{
   font-size: 14px;
   cursor: pointer;
 }
-/*.register-holder button:hover{
-
-}
-*/
 .register-holder button:first-child{
   border-right: 1px solid;
 }
@@ -185,32 +246,75 @@ footer h3{
     width: 90%;
     margin: 10vh 5%; 
     
-  }
+}
   .form_container h1{
     margin: 0px 1.8em;
-  }
+}
   .form_control {
     margin: 0 0px 0px 20%;
-  }
+}
   input[type=submit]{
     width: 80%;
     line-height: 3rem;
     font-size: 1.5em;
     background: #e68a01;
     margin: 2rem 0rem;
-  }
+}
   .label{
     font-size: 1em;
-  }
+}
     .locker{
     margin: 5em 0% 0em -44%;
 
-  }
+}
   .form_container_left{
     width: 60%;
     margin: 10vh 20% 4vh 20%;
     color: #fff;
     display: block;
+}
+
+  /*navbar styling*/
+  .menu-holder{
+    width: 100%;
+    height: 100vh;
+    left: -120%;
+    top: 80px;
+    position: absolute;
+    background-color: #e68a01;
+    margin-top: 20px;
+    padding-left: 100px;
+    transition: all .5s ease-out;
+    z-index: 8;
+}
+  nav{
+    padding: 0px;
+}
+  .logo{
+    width: 30%;
+}
+  #barsbtn{
+    display: block;
+    color: #e68a01;
+}
+  .menu-holder ul ul{
+    position: relative;
+}
+  .menu-holder ul li{
+    display: block;
+    float: none;
+  }
+  .menu-holder ul li a{
+    font-size: 18px;
+    line-height: 40px;
+    color: #fff;
+}
+  #check:checked ~ .menu-holder{
+    display: block;
+    left: -10px;
+}
+  #btn-btn{
+  width: 50%;
   }
 }
 
@@ -218,17 +322,17 @@ footer h3{
   .form_container{
     width: 80%;
     margin: 10vh 10%; 
-  }
+}
   .form_control {
     margin: 0 0px 0px 20%;
-  }
+}
   input[type=submit]{
     width: 80%;
     background: #e68a01;
-  }
+}
   .form_container h1{
     margin: 0px 3em;
-  }
+}
   .register-holder{
   transform: rotate(-90deg);
   top: 9em;
