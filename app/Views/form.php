@@ -17,13 +17,13 @@
 			<div class="label forgot-label">Forgot Password?</div>
 			<input type="submit" value="Login Now" name="submit">
 		</form>
-	</div>
 
-	<!-- transparent button for login and register -->
-	<div class="register-holder">
-		<button>Register</button>
-		|
-		<button>Login</button>
+		<!-- transparent button for login and register -->
+		<div class="register-holder">
+			<button>Register</button>
+			<button>Login</button>
+		</div>
+	
 	</div>
 
 	<!-- left container -->
@@ -38,6 +38,6 @@
 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	
 		</p>
-		<button>Learn More</button>
+		<a href="#"><button>Learn More</button></a>
 	</div>
 </div>

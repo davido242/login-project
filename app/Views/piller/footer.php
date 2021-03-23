@@ -1,6 +1,6 @@
-<div class="footer">
-<h3>My Footer Section</h3>
-</div>
+<footer>
+  <h3>My Footer Section</h3>
+</footer>
 
 
 

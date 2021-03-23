@@ -1,92 +1,104 @@
 *{
   box-sizing: border-box;
-  padding: 0;
+}
+body{
   margin: 0;
 }
 
-body{
+/*for navBar*/
+.fluid-all{
   background: navy;
   background-image: url('https://cdn.mos.cms.futurecdn.net/TeHDvyZxpKKpfZDQoKUySj-970-80.jpg.webp');
   background-size:cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  width: 100%;
+  height: auto;
+  margin-top: 6em;
+  padding: 1em 0;
+  position: relative;
+}
+.fluid-all::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.4);
+}
+.form_control{
+  margin: 0 0px 0px 100px;
+}
+.form_container{
+  background: #fff;
+  color: navy;
+  line-height: auto;
+  width: 40%;
+  margin: 10vh 30%;
+  padding: 2em;
+  border-radius: 10px;
+  position: relative;
+}
+.register-holder{
+  background: #ffffff73;
+  position: absolute;
+  padding: 0px 10% 0px 20%;
+  border-radius: 5px;
+  color: #cebcbc38;
+  font-size: 1em;
+  top: -3em;
+  padding: 1em 1.5em;
 }
 
-/*for navBar*/
-  .fluid-all{
-    width: 100%;
-    height: auto;
-    margin: 20vh 0% 0vh 0%;
-    /*position: absolute;*/
-    /*z-index: 2000;*/
-  }
-  .form_control{
-    margin: 0 0px 0px 100px;
-  }
-  .form_container{
-    background: #fff;
-    color: navy;
-    line-height: auto;
-    width: 40%;
-    margin: 10vh 30%; 
-    padding: 2em;
-    border-radius: 10px;
-  }
-  .register-holder{
-    width: 30%;
-    line-height: 3em;
-    z-index: -1;
-    background: #ffffff73;
-    position: absolute;
-    padding: 0px 10% 0px 20%;
-    border-radius: 5px;
-    color: #cebcbc38;
-    font-size: 1em;
-    transform: rotate(-90deg);
-    top: 50%;
-    left: 38.5%;
-  }
-  .register-holder button{
-    background: none;
-    outline: none;
-    color: #fff;
-    border:none;
-    margin: 0px 1em;
-    font-size: 14px;
-  }
-  .form_container_left{
-    top: 0px;
-    left: 0px;
-    width: 40%;
-    margin: 20vh 0% 0 5%;
-    position: absolute;
-    color: #fff;
-    display: none;
-    z-index: -2;
-  }
-  .form_container_left p, button{
-    margin:1em 0;
-  }
-  .form_container_left button{
-    background: #e68a01;
-    width: 10em;
-    font-family: sans-serif;
-    font-weight: bold;
-    color: #fff;
-    border-radius: 5px;
-    border: none;
-    line-height: 3em;
+.register-holder button{
+  background: none;
+  outline: none;
+  color: #fff;
+  border:none;
+  margin: 0;
+  padding: 0 2em;
+  font-size: 14px;
+  cursor: pointer;
+}
+/*.register-holder button:hover{
 
-  }
-  .form_container_left button:hover{
-    background: #926522;
-    cursor: pointer;
-  }
-  .form_container h1{
-    text-align: left;
-    font-family: sans-serif;
-    color: #e68a01;
-  }
+}
+*/
+.register-holder button:first-child{
+  border-right: 1px solid;
+}
+
+.form_container_left{
+  width: 40%;
+  color: #fff;
+  display: none;
+  position: relative;
+}
+.form_container_left p, button{
+  margin:1em 0;
+}
+.form_container_left button{
+  background: #e68a01;
+  width: 10em;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  line-height: 3em;
+
+}
+.form_container_left button:hover{
+  background: #926522;
+  cursor: pointer;
+}
+.form_container h1{
+  text-align: left;
+  font-family: sans-serif;
+  color: #e68a01;
+}
 #row_map, #ander{
   background: #000;
   color: #fff;
@@ -94,78 +106,79 @@ body{
   line-height: 5rem;
   font-size: 1.5em;
   text-align: center;
-  }
+}
 .road_map{
-    margin: 100px 0 0 0px;
-    line-height: 10rem;
-  }
+  margin: 100px 0 0 0px;
+  line-height: 10rem;
+}
 #ander{
-    line-height: 12rem;
-  }
-  .error_message, .error_password{
-    background: #fdafaf;
-    color: red;
-    width: 80%;
-    font-size: 1em;
-    margin: 2px 0;
-    line-height: 1.5rem;
-    border-radius: 3px;
-    text-align: center;
-    display: none;
-  }
-  input[type=email], input[type=password]{
-    width: 80%;
-    outline: none;
-    line-height: 2rem;
-    padding: 5px 35px;
-    margin: .5em 0em;
-  }
-  input[type=submit]{
-    width: 70%;
-    background: #484802;
-    border:none;
-    border-radius: 5px;
-    line-height: 2rem;
-    font-family: arial;
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #fff;
-    /*margin: 2rem 30% 0px 0%;*/
-    cursor: pointer;
-    transition: .5s ease-out;
-  }
-  input[type=submit]:hover {
-    background: #926522;
-    color: navy;
-  }
-  .label{
-    font-size: 1.5em;
-    font-family: arial;
-    color: #000;
-    margin: 20px 0px 0px 0px;
-  }
-  .forgot-label{
-    color: #e68a01;
-    cursor: pointer;
-  }
-  .fa-user{
-    position: absolute;
-    margin: 20px 1.5%;
-    color: #000;
-    z-index: -2;
-  }
-  .locker{
-    margin: 5em 0% 0em -31%;
-  }
-  .footer{
-    color: #fff;
-    background: #000;
-    margin: 10vh 0 0px 0px;
-    width: 100%;
-    line-height: 4em;
-    text-align: center;
-    position:absolute;
-  }
+  line-height: 12rem;
+}
+.error_message, .error_password{
+  background: #fdafaf;
+  color: red;
+  width: 80%;
+  font-size: 1em;
+  margin: 2px 0;
+  line-height: 1.5rem;
+  border-radius: 3px;
+  text-align: center;
+  display: none;
+}
+input[type=email], input[type=password]{
+  width: 80%;
+  outline: none;
+  line-height: 2rem;
+  padding: 5px 35px;
+  margin: .5em 0em;
+}
+input[type=submit]{
+  width: 70%;
+  background: #484802;
+  border:none;
+  border-radius: 5px;
+  line-height: 2rem;
+  font-family: arial;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: .5s ease-out;
+}
+input[type=submit]:hover {
+  background: #926522;
+  color: navy;
+}
+.label{
+  font-size: 1.5em;
+  font-family: arial;
+  color: #000;
+  margin: 20px 0px 0px 0px;
+}
+.forgot-label{
+  color: #e68a01;
+  cursor: pointer;
+}
+.fa-user{
+  position: absolute;
+  margin: 20px 1.5%;
+  color: #000;
+  z-index: -2;
+}
+.locker{
+  margin: 5em 0% 0em -31%;
+}
+
+footer{
+  color: #fff;
+  background: #000;
+  text-align: center;
+  padding: 1em;
+}
+
+footer h3{
+  margin: 0;
+}
 
 @media (min-width: 320px){
   .form_container{
@@ -194,22 +207,10 @@ body{
 
   }
   .form_container_left{
-    top: 0px;
-    left: 0px;
     width: 60%;
     margin: 10vh 20% 4vh 20%;
-    position: relative;
     color: #fff;
     display: block;
-  }
-  .register-holder{
-    width: 80%;
-    line-height: 3em;
-    /*padding: 0px 10% 0px 20%;*/
-    font-size: 1em;
-    transform: rotate(0deg);
-    top: 75%;
-    left: 10%;
   }
 }
 
@@ -228,14 +229,10 @@ body{
   .form_container h1{
     margin: 0px 3em;
   }
-    .register-holder{
-    width: 70%;
-    line-height: 3em;
-    /*padding: 0px 7em;*/
-    font-size: 1em;
-    transform: rotate(0deg);
-    top: 75%;
-    left: 15%;
+  .register-holder{
+  transform: rotate(-90deg);
+  top: 9em;
+  left: -9em;
   }
 }
 
@@ -247,23 +244,19 @@ body{
   }
   .locker{
     margin: 5em 0% 0em -32%;
-
-  }
-  .register-holder{
-    width: 50%;
-    line-height: 3em;
-    padding: 0px 2% 0px 14%;
-    font-size: 1em;
-    transform: rotate(0deg);
-    top: 85%;
-    left: 25%;
   }
 }
 
 @media (min-width: 1020px){
+  .fluid-all::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
   .form_container{
     width: 40%;
-    margin: 10vh 5% 10vh 55%; 
+    margin: 10vh 5%; 
+    float: right;
     background: #fff;
     color: #fff;
   }
@@ -290,25 +283,11 @@ body{
 
   }
   .form_container_left{
-    top: 0px;
-    left: 0px;
     width: 40%;
-    margin: 20vh 0% 0 5%;
-    position: absolute;
+    margin: 9em  3em;
     display: block;
   }
   .form_container h1{
     margin: 0px .8em;
   }
-  .register-holder{
-    width: 30%;
-    line-height: 3em;
-    z-index: -1;
-    background: #ffffff38;
-    padding: 0px 2% 0px 8%;
-    font-size: 1em;
-    transform: rotate(-90deg);
-    top: 50%;
-    left: 38.5%;
-  }
-}
+ }
