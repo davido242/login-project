@@ -27,7 +27,6 @@ nav{
   padding: 1em 3em;
 }
 .logo img{
-  /*margin: 1em auto;*/
   height: 50px;
 }
 .menu-holder{
@@ -185,7 +184,7 @@ nav{
   text-align: center;
   display: none;
 }
-input[type=email], input[type=password]{
+input[type=email], input[type=password], input[type=number]{
   width: 80%;
   outline: none;
   line-height: 2rem;
@@ -228,6 +227,9 @@ input[type=submit]:hover {
 .locker{
   margin: 5em 0% 0em -31%;
 }
+#myDemo2{
+  display: none;
+}
 
 footer{
   color: #fff;
@@ -245,9 +247,6 @@ footer h3{
     width: 90%;
     margin: 10vh 5%; 
     
-}
-  .form_container h1{
-    margin: 0px 1.8em;
 }
   .form_control {
     margin: 0 0px 0px 20%;
@@ -329,9 +328,6 @@ footer h3{
     width: 80%;
     background: #e68a01;
 }
-  .form_container h1{
-    margin: 0px 3em;
-}
   .register-holder{
   transform: rotate(-90deg);
   top: 9em;
@@ -342,8 +338,7 @@ footer h3{
 @media (min-width: 800px){
   .form_container{
     width: 60%;
-    margin: 10vh 20%; 
-    height: 30em;
+    margin: 10vh 20%;
   }
   .locker{
     margin: 5em 0% 0em -32%;
@@ -389,8 +384,5 @@ footer h3{
     width: 40%;
     margin: 9em  3em;
     display: block;
-  }
-  .form_container h1{
-    margin: 0px .8em;
   }
  }

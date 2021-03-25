@@ -1,14 +1,16 @@
 <div class="fluid-all">
 	<div class="form_container">
-		<h1>Login</h1>
-		<form class="form_control" action="" method="">
+		<form class="form_control" action="" method="" id="myDemo">
+			<h1>Login</h1>
 			<div class="label">*Log into your account</div>
 			<i class="fa fa-user 3x"></i>
 			<input type="email" name="name" placeholder="Your Email">
 			<div class="error_message">
 				Invalid Email or Phone input!
 			</div>
+		
 			<!-- <div class="label">*Password</div> -->
+		
 			<i class="fa fa-user fa-lock locker 3x"></i>
 			<input type="password" name="password" placeholder="Password">
 			<div class="error_password">
@@ -18,10 +20,39 @@
 			<input type="submit" value="Login Now" name="submit">
 		</form>
 
+		<!-- Registration form Section -->
+
+		<form class="form_control" action="" method="" id="myDemo2">
+			<h1>Register</h1>
+			<div class="label">*Register your account</div>
+			<i class="fa fa-user 3x"></i>
+			<input type="email" name="name" placeholder="Enter Valid Email">
+			<div class="label">*Phone Number</div>
+			<input type="number" name="name" placeholder="Enter Phone Number">
+			<div class="error_message">
+				Invalid Email or Phone input!
+			</div>
+		
+			<div class="label">*Password</div>
+			<i class="fa fa-user fa-lock locker 3x"></i>
+			<input type="password" name="password" placeholder="Password">
+			<div class="label">*Confirm Password</div>
+			<input type="password" name="password" placeholder="Confirm Password">
+			<div class="error_password">
+				Invalid Password Input!
+			</div>
+			<div class="label forgot-label">
+				<input type="checkbox" name="">Remember Password?
+			</div>
+			<input type="submit" value="Register" name="submit">
+		</form>
+
+		
 		<!-- transparent button for login and register -->
+		
 		<div class="register-holder">
-			<button>Register</button>
-			<button>Login</button>
+			<button onclick="showRegistrationForm()">Register</button>
+			<button onclick="showLoginForm()">Login</button>
 		</div>
 	
 	</div>
