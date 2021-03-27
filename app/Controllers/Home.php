@@ -14,4 +14,9 @@ class Home extends BaseController
   {
     return view('welcome_message');
   }
+
+  public function notification_page()
+  {
+    return view('home');
+  }
 }

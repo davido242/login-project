@@ -51,7 +51,7 @@
 		<!-- transparent button for login and register -->
 		
 		<div class="register-holder">
-			<button onclick="showRegistrationForm()">Register</button>
+			<button onclick="showRegistrationForm()" id="myTextColor">Register</button>
 			<button onclick="showLoginForm()">Login</button>
 		</div>
 	
