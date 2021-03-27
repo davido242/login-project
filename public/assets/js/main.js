@@ -7,3 +7,15 @@ function showRegistrationForm(){
   document.getElementById('myDemo').style.display = 'none';
   document.getElementById('myDemo2').style.display = 'block';
 }
+
+
+
+// function collapseNavBar(){
+//   document.getElementById('myDemo').style.display = 'none';
+//   document.getElementById('myDemo2').style.display = 'block';
+// }
+
+function collapseNavBarSec(){
+  document.getElementById('myDemo').style.display = 'none';
+  document.getElementById('myDemo2').style.display = 'block';
+}
