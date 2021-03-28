@@ -1,86 +1,91 @@
 /*notification_page styling*/
 /*Nav section*/
 
-  .chat-header{
+.chat-header{
   background: #020208;
-
+  display: flex;
+  justify-content: space-between;
+  height: 5em;
+  padding: 1em;
+  border-bottom: 2px solid #251717;
 }
-  .logo2{
-  top: 0;
-  position: absolute;
-  margin: 2em 2em;
+.logo2{
 }
-  .logo2 img{
-    height: 40px;
-  }
-  .chat-nav{
-    position: relative;
-  }
+.logo2 img{
+  height: 50px;
+}
 
-  .chat-nav ul li{
-    position: relative;
-    list-style: none;
-    cursor: pointer;
-    transition: .2s ease-out;
-  }
-  .chat-nav ul li:hover{
-    background: #dedee0;
-    font-size: 25px;
-  }
-  .chat-nav ul li a{
-    position: relative;
-    text-decoration: none;
-    font-size: 16px;
-    font-family: arial;
-    margin: 0 5px;
-  }
-  .chat-bars{
-    color: #fff;
-    font-size: 2em;
-    border: 2px solid #fff;
-    padding: 5px;
-    border-radius: 5px;
-    margin: .7em 85%;
-  }
-  /*.note-bars ul li{
-    color: red;
-  }*/
-  .menu-container-chat{
+
+.chat-bars{
+  color: #fff;
+  font-size: 2em;
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+/*.note-bars ul li{
+  color: red;
+}*/
+.chat-nav{
   display: block;
   background: #fff;
   width: 100%;
-  position: absolute;
-  top: 6.2em;
+  /*transition: 5s ease-out;*/
+  /*position: absolute;
+  top: 6.2em;*/
+}
+
+.chat-nav ul li{
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+  text-align: center;
+  margin: 2em 0;
+}
+.chat-nav ul li a{
+  position: relative;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: arial;
+  margin: 0 5px;
 }
 .notification-box{
   background: #000;
   color: #fff;
   height: auto;
   padding-bottom: 5px;
+  text-align: center;
 }
-.image-container-h{
-  width: 50%;
-  margin: 0 25%;
-  padding: 1em 6%;
-}
+
 .image-circle{
   width: 80px;
   height: 80px;
   background: green;
   border-radius: 50%;
+  margin: 0 auto;
 }
 .caption-holder{
 
 }
 .notification-stat-main{
   background: #dedee0;
-  position: absolute;
+  /*position: absolute;*/
+  width: 90%;
+  /*position: absolute;
+  top: 35em;*/
   padding: 0.5em;
+}
+.chat-nav, .mystyle ~ .notification-stat-main{
+  margin-top: 5em;
+  /*transition: 5s ease-out;*/
+  /*transform: translateY(-419px);*/
+
 }
 .notification-stat{
   background: #fff;
   border-radius: 5px;
   line-height: 2em;
+  border-bottom: 2px solid #c1c1c7;
 }
 .notification-stat a{
   text-decoration: none;
@@ -93,6 +98,7 @@
 }
 .notification-stat-items, .notification-stat i{
   padding: 0 10px;
+  
 
 }
 .notification-stat-items p{
@@ -102,89 +108,75 @@
 .notification-stat-items span{
   display: block;
 }
-
+.mystyle{
+  display: none;
+ /* transition: .2s ease-out;
+  transform: translateY(-419px);
+  margin-top: -420px;*/
+}
 
 /*Media Querries*/
 @media (min-width: 360px){
-  .menu-container-chat{
-  position: absolute;
-  width: 100%;
-}
-.notification-stat{
-  width: 90%;
-  border-radius: 5px;
-  margin: 0 5%;
-  text-align: center;
-}
-.notification-stat-items{
-  margin-top: 12px;
-}
-.notification-stat-main{
-  width: 90%;
-  position: absolute;
-  top: 35em;
-  padding: 0.5em;
-}
-.notification-box{
-  width: 60%;
-  margin: 0px 20%;
-  text-align: center;
-}
- .chat-bars{
-  color: #fff;
-  font-size: 2em;
-  border: 2px solid #fff;
-  padding: 5px;
-  border-radius: 5px;
-  margin: .7em 85%;
-  }
-  .chat-nav ul li{
+  .notification-stat{
+    width: 90%;
+    border-radius: 5px;
+    margin: 0 5%;
     text-align: center;
-    margin: 2em 0;
+  }
+  .notification-stat-items{
+    margin-top: 12px;
   }
 }
 
-@media (min-width: 700px){
-  .menu-container-chat{
-  position: absolute;
-  width: 20%;
-  top: 6.2em;
-  height: 100vh;
-}
-.notification-stat{
-  width: 100%;
-  border-radius: 0px;
-  margin: 0px 0%;
-  text-align: left;
-  line-height: 5em;
-}
-.notification-stat-items{
-  width: 90%;
-  margin: 0 8%;
-}
-.notification-stat-main{
-  width: 80%;
-  position: absolute;
-  top: 6em;
-  left: 11em;
-  padding: 0em;
-}
-.notification-box{
-  width: 100%;
-  margin: 0px 0%;
-}
-.chat-bars{
-  margin: .7em 25%;
-}
-.chat-nav ul li{
+@media (min-width: 981px){
+  .chat-header{
+    justify-content: unset;
+  }
+
+  .logo2{
+    width: 20%;
+  }
+
+  .chat-bars{
+    margin: 0 2em;
+  }
+
+  main{
+    display: flex;
+  }
+  
+  .chat-nav{
+    width: 20%;
+    height: 100vh;
+    display: none;
+  }
+
+  .mystyle{
+    display: block;
+  }
+
+  .chat-nav ul li{
     text-align: left;
     margin: 2em 0px;
+  }
+
+  .notification-stat{
+    width: 100%;
+    border-radius: 0px;
+    margin: 0;
+    text-align: left;
+    line-height: 5em;
+  }
+  .notification-stat-items{
+    width: 90%;
+    margin: 0 5% 0% 5%;
+  }
+  .notification-stat-main{
+    width: auto;
+    padding: 0em;
+    margin-top: 5em;
   }
 }
 
 @media (min-width: 1024px){
-  .notification-box{
-  width: 62%;
-  margin: 0px 0%;
-}
 }
