@@ -34,7 +34,8 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('index/', 'Home::index');
 $routes->get('help/', 'Home::help');
-$routes->get('notification_page/', 'Home::notification_page');
+$routes->get('notification/', 'Home::notification');
+$routes->get('chat/', 'Home::chat');
 
 /*
  * --------------------------------------------------------------------

@@ -8,12 +8,7 @@ function showRegistrationForm(){
   document.getElementById('myDemo2').style.display = 'block';
 }
 
-
-
-// function collapseNavBar(){
-//   document.getElementById('myDemo').style.display = 'none';
-//   document.getElementById('myDemo2').style.display = 'block';
-// }
+// toogle funtion for notification element and harmbuger
 function myFunction() {
   console.trace();
    var element = document.getElementById("myDIV");

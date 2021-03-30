@@ -5,13 +5,10 @@
   <?php echo view("piller/header");?>
 </head>
 <body>
-<?php echo view("piller/notification_nav_bar")?>
-<?php echo view("notification_page");?>
+<?php echo view("piller/menu_nav_bar")?>
 
 
-<!-- background image address
-https://cdn.mos.cms.futurecdn.net/TeHDvyZxpKKpfZDQoKUySj-970-80.jpg.webp -->
-
+<!-- footer section -->
 <?php echo view("piller/footer");?>
 </body>
 </html>

@@ -9,6 +9,21 @@
   padding: 1em;
   border-bottom: 2px solid #251717;
 }
+.chat-header > .online-caption{
+  color: #fff;
+  padding: 5px;
+  margin: 0 auto;
+  display: none;
+}
+.chat-header > .online-caption p{
+  display: inline-block;
+  margin-left: 1em;
+}
+#online{
+  background: green;
+  padding: 5px;
+  border-radius: 5px;
+}
 .logo2{
 }
 .logo2 img{
@@ -129,6 +144,9 @@
 }
 
 @media (min-width: 981px){
+  .chat-header > .online-caption{
+    display: block;
+  }
   .chat-header{
     justify-content: unset;
   }

@@ -15,8 +15,15 @@ class Home extends BaseController
     return view('welcome_message');
   }
 
-  public function notification_page()
+
+  public function notification()
   {
     return view('home');
+  }
+
+
+  public function chat()
+  {
+    return view('chat_page');
   }
 }
