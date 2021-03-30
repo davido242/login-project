@@ -129,6 +129,81 @@
   transform: translateY(-419px);
   margin-top: -420px;*/
 }
+.chat-margin p{
+  border-bottom: none;
+  padding: 1em;
+}
+.row1, .row2{
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+}
+.rounded{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: green;
+  margin-top: 1em;
+  float: left;
+}
+.chat-box2{
+  background: #dedee0;
+  width: 80%;
+  margin-left: 3em;
+}
+.chat-response{
+  background: #dab665;
+  margin-left: auto;
+  margin-right: 37px;
+  margin-top: -2em;
+}
+.rounded-response{
+  background: red;
+  float: right;
+  margin-top: -1em;
+}
+.time-caps{
+  display: inline-block;
+  width: 100%;
+  padding-top: 1em;
+}
+.time-caps-self{
+  background: #fff;
+  color: #000;
+  position: absolute;
+  width: 25%;
+  text-align: center;
+  margin: 0 25%;
+  font-size: 12px;
+}
+.form-text-area{
+  margin-top: 1em;
+
+}
+.form-text-area textarea{
+  width: 85%;
+  outline: none;
+  line-height: 2em;
+  border: none;
+  margin: 0 auto;
+  border-bottom: 2px solid #dedee0;
+}
+.form-message-btn{
+  width: 100%;
+  text-align: right;
+  padding: 1em;
+  /*background: red;*/
+}
+.form-message-btn button{
+  width: 35%;
+  margin: 0px 5%;
+  background: #e68a01;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  line-height: 2.5em;
+}
 
 /*Media Querries*/
 @media (min-width: 360px){
@@ -150,6 +225,10 @@
   .chat-header{
     justify-content: unset;
   }
+  .time-caps-self{
+  width: 8%;
+  margin: 0 30%;
+}
 
   .logo2{
     width: 20%;
@@ -183,18 +262,27 @@
     border-radius: 0px;
     margin: 0;
     text-align: left;
-    line-height: 5em;
+    line-height: 2em;
   }
   .notification-stat-items{
     width: 90%;
-    margin: 0 5% 0% 5%;
+    margin: 0 7% 0% 3%;
   }
   .notification-stat-main{
     width: auto;
     padding: 0em;
     margin-top: 5em;
   }
-}
-
-@media (min-width: 1024px){
+  .chat-margin{
+  margin: 3em 7% 0% 3%;
+  }
+  .form-message-btn button{
+  width: 15%;
+  margin: 0px 5%;
+  line-height: 2.5em;
+  }
+  .form-text-area textarea{
+  width: 65%;
+  margin: 0 auto;
+  }
 }

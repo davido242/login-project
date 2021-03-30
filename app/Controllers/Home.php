@@ -18,7 +18,7 @@ class Home extends BaseController
 
   public function notification()
   {
-    return view('home');
+    return view('notification_page');
   }
 
 
