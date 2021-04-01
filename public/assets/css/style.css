@@ -136,7 +136,7 @@ nav{
   position: relative;
 }
 .form_container_left p, button{
-  margin:1em 0;
+  margin: 1em 0;
 }
 .form_container_left button{
   background: #e68a01;
@@ -185,11 +185,12 @@ nav{
   display: none;
 }
 input[type=email], input[type=password], input[type=number]{
-  width: 80%;
+  width: 95%;
   outline: none;
   line-height: 2rem;
-  padding: 5px 35px;
+  padding: 5px 16px;
   margin: .5em 0em;
+  border-radius: 1em;
 }
 input[type=submit]{
   width: 70%;
@@ -335,6 +336,30 @@ footer h3{
   transform: rotate(-90deg);
   top: 9em;
   left: -9em;
+  }
+
+  /*menu bar display of block*/
+    #barsbtn{
+      display: none;
+  }
+    .menu-holder{
+    width: 60%;
+    height: 80px;
+    left: 0%;
+    background: none;
+    top: 0px;
+    position: absolute;
+    margin: 0px 0px 0px 30%;
+    padding-left: 0px;
+    text-align: right;
+  }
+  .menu-holder ul li{
+    display: inline-block;
+    width: 100px;
+  }
+  .menu-holder ul li:hover{
+    background: #e68a01;
+    border-radius: 5px;
   }
 }
 
