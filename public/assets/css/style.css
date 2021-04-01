@@ -4,8 +4,7 @@
 body{
   margin: 0;
 }
-
-/*for navBar*/
+/*NavBar Section*/
 header {
   position: fixed;
   width: 100%;
@@ -67,7 +66,6 @@ nav{
 }
 /*end of Navbar*/
 
-
 /*form section*/
 .fluid-all{
   background: navy;
@@ -114,7 +112,6 @@ nav{
   top: -3em;
   padding: 1em 1.5em;
 }
-
 .register-holder button{
   background: none;
   outline: none;
@@ -128,7 +125,6 @@ nav{
 .register-holder button:first-child{
   border-right: 1px solid;
 }
-
 .form_container_left{
   width: 40%;
   color: #fff;
@@ -147,7 +143,6 @@ nav{
   border-radius: 5px;
   border: none;
   line-height: 3em;
-
 }
 .form_container_left button:hover{
   background: #926522;
@@ -231,14 +226,12 @@ input[type=submit]:hover {
 #myDemo2{
   display: none;
 }
-
 footer{
   color: #fff;
   background: #000;
   text-align: center;
   padding: 1em;
 }
-
 footer h3{
   margin: 0;
 }
@@ -249,8 +242,7 @@ footer h3{
 @media (min-width: 320px){
   .form_container{
     width: 90%;
-    margin: 10vh 5%; 
-    
+    margin: 10vh 5%;     
 }
   .form_control {
     margin: 0 0px 0px 20%;
@@ -267,7 +259,6 @@ footer h3{
 }
     .locker{
     margin: 5em 0% 0em -44%;
-
 }
   .form_container_left{
     width: 60%;

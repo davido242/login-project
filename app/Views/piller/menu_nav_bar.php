@@ -15,6 +15,6 @@
     <li><span><i class="fa fa-comment note-bars"></i></span><a href="chat">Chat</a></li>
     <li><span><i class="fa fa-user-circle note-bars"></i></span><a href="#">Profile</a></li>
     <li><span><i class="fa fa-share-square note-bars"></i></span><a href="#">Subscription</a></li>
-    <li><span><i class="fa fa-power-off note-bars"></i></span><a href="#">Logout</a></li>
+    <li><span><i class="fa fa-power-off note-bars"></i></span><a href="index">Logout</a></li>
   </ul>
 </nav>

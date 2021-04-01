@@ -1,6 +1,8 @@
 <header class="chat-header">
   <div class="logo2">
-    <img src="https://raw.githubusercontent.com/davido242/login-project/main/public/images/testrun2.png" alt="Clients/Company Logo">
+    <a href="index">
+      <img src="https://raw.githubusercontent.com/davido242/login-project/main/public/images/testrun2.png" alt="Clients/Company Logo">
+    </a>
   </div>
   <i id="collapseNavBar" class="fa fa-bars chat-bars" onclick="myFunction()"></i>
   <div class="online-caption">
