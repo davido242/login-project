@@ -1,407 +1,408 @@
+
 *{
-  box-sizing: border-box;
+box-sizing: border-box;
 }
 body{
-  margin: 0;
+margin: 0;
 }
 /*NavBar Section*/
 header {
-  position: fixed;
-  width: 100%;
-  height: 4.25em;
-  background-color: #000;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
+position: fixed;
+width: 100%;
+height: 4.25em;
+background-color: #000;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+z-index: 2;
 }
 nav{
-  padding: 10px;
+padding: 10px;
 }
 .logo{
-  width: 10%;
-  height: 80px;
-  float: left;
-  padding: 1em 3em;
+width: 10%;
+height: 80px;
+float: left;
+padding: 1em 3em;
 }
 .logo img{
-  height: 50px;
+height: 50px;
 }
 .menu-holder{
-  width: 80%;
-  height: 80px;
-  float: right;
-  padding-left: 100px;
-  background-color: #fff;
+width: 80%;
+height: 80px;
+float: right;
+padding-left: 100px;
+background-color: #fff;
 }
 .menu-holder ul li{
-  display: inline-block;
-  position: relative;
-  float: left;
-  text-align: center;
-  width: 150px;
-  transition: .2s ease-out;
-  cursor: pointer;
+display: inline-block;
+position: relative;
+float: left;
+text-align: center;
+width: 150px;
+transition: .2s ease-out;
+cursor: pointer;
 }
 .menu-holder ul li a{
-  text-decoration: none;
-  color: #436bdc;
-  font-size: 18px;
-  font-family: arial;
-  line-height: 80px;
+text-decoration: none;
+color: #436bdc;
+font-size: 18px;
+font-family: arial;
+line-height: 80px;
 }
 .menu-holder ul li a:hover {
-  text-decoration: none;
+text-decoration: none;
 }
 .menu-holder ul li:hover{
-  background-color: #000;
+background-color: #000;
 }
-  #barsbtn, #check{
-  font-size: 70px;
-  float: right;
-  margin:10px 30px 0 0px;
-  display: none;
-  cursor: pointer;
+#barsbtn, #check{
+font-size: 40px;
+float: right;
+margin:10px 30px 0 0px;
+display: none;
+cursor: pointer;
 }
 /*end of Navbar*/
 
 /*form section*/
 .fluid-all{
-  background: navy;
-  background-image: url('https://cdn.mos.cms.futurecdn.net/TeHDvyZxpKKpfZDQoKUySj-970-80.jpg.webp');
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  width: 100%;
-  height: auto;
-  margin-top: 3em;
-  padding: 1em 0;
-  position: relative;
+background: navy;
+background-image: url('https://cdn.mos.cms.futurecdn.net/TeHDvyZxpKKpfZDQoKUySj-970-80.jpg.webp');
+background-size:cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+width: 100%;
+height: auto;
+margin-top: 3em;
+padding: 1em 0;
+position: relative;
 }
 .fluid-all::before{
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0,0,0,0.4);
+content: "";
+display: block;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background: rgba(0,0,0,0.4);
 }
 .form_control{
-  margin: 0 0px 0px 100px;
+margin: 0 0px 0px 100px;
 }
 .form_container{
-  background: #fff;
-  color: navy;
-  line-height: auto;
-  width: 40%;
-  margin: 10vh 30%;
-  padding: 2em;
-  border-radius: 10px;
-  position: relative;
+background: #fff;
+color: navy;
+line-height: auto;
+width: 40%;
+margin: 10vh 30%;
+padding: 2em;
+border-radius: 10px;
+position: relative;
 }
 .register-holder{
-  background: #ffffff73;
-  position: absolute;
-  padding: 0px 10% 0px 20%;
-  border-radius: 5px;
-  color: #cebcbc38;
-  font-size: 1em;
-  top: -3em;
-  padding: 1em 1.5em;
+background: #ffffff73;
+position: absolute;
+padding: 0px 10% 0px 20%;
+border-radius: 5px;
+color: #cebcbc38;
+font-size: 1em;
+top: -3em;
+padding: 1em 1.5em;
 }
 .register-holder button{
-  background: none;
-  outline: none;
-  color: #fff;
-  border:none;
-  margin: 0;
-  padding: 0 2em;
-  font-size: 14px;
-  cursor: pointer;
+background: none;
+outline: none;
+color: #fff;
+border:none;
+margin: 0;
+padding: 0 2em;
+font-size: 14px;
+cursor: pointer;
 }
 .register-holder button:first-child{
-  border-right: 1px solid;
+border-right: 1px solid;
 }
 .form_container_left{
-  width: 40%;
-  color: #fff;
-  display: none;
-  position: relative;
+width: 40%;
+color: #fff;
+display: none;
+position: relative;
 }
 .form_container_left p, button{
-  margin: 1em 0;
+margin: 1em 0;
 }
 .form_container_left button{
-  background: #e68a01;
-  width: 10em;
-  font-family: sans-serif;
-  font-weight: bold;
-  color: #fff;
-  border-radius: 5px;
-  border: none;
-  line-height: 3em;
+background: #e68a01;
+width: 10em;
+font-family: sans-serif;
+font-weight: bold;
+color: #fff;
+border-radius: 5px;
+border: none;
+line-height: 3em;
 }
 .form_container_left button:hover{
-  background: #926522;
-  cursor: pointer;
+background: #926522;
+cursor: pointer;
 }
 .form_container h1{
-  text-align: left;
-  font-family: sans-serif;
-  color: #e68a01;
+text-align: left;
+font-family: sans-serif;
+color: #e68a01;
 }
 #row_map, #ander{
-  background: #000;
-  color: #fff;
-  width: 100%;
-  line-height: 5rem;
-  font-size: 1.5em;
-  text-align: center;
+background: #000;
+color: #fff;
+width: 100%;
+line-height: 5rem;
+font-size: 1.5em;
+text-align: center;
 }
 .road_map{
-  margin: 100px 0 0 0px;
-  line-height: 10rem;
+margin: 100px 0 0 0px;
+line-height: 10rem;
 }
 #ander{
-  line-height: 12rem;
+line-height: 12rem;
 }
 .error_message, .error_password{
-  background: #fdafaf;
-  color: red;
-  width: 80%;
-  font-size: 1em;
-  margin: 2px 0;
-  line-height: 1.5rem;
-  border-radius: 3px;
-  text-align: center;
-  display: none;
+background: #fdafaf;
+color: red;
+width: 80%;
+font-size: 1em;
+margin: 2px 0;
+line-height: 1.5rem;
+border-radius: 3px;
+text-align: center;
+display: none;
 }
 input[type=email], input[type=password], input[type=number]{
-  width: 95%;
-  outline: none;
-  line-height: 2rem;
-  padding: 5px 16px;
-  margin: .5em 0em;
-  border-radius: 1em;
+width: 95%;
+outline: none;
+line-height: 2rem;
+padding: 5px 16px;
+margin: .5em 0em;
+border-radius: 1em;
 }
 input[type=submit]{
-  width: 70%;
-  background: #484802;
-  border:none;
-  border-radius: 5px;
-  line-height: 2rem;
-  font-family: arial;
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #fff;
-  cursor: pointer;
-  transition: .5s ease-out;
+width: 70%;
+background: #484802;
+border:none;
+border-radius: 5px;
+line-height: 2rem;
+font-family: arial;
+font-size: 1.5em;
+font-weight: bold;
+color: #fff;
+cursor: pointer;
+transition: .5s ease-out;
 }
 input[type=submit]:hover {
-  background: #926522;
-  color: navy;
+background: #926522;
+color: navy;
 }
 .label{
-  font-size: 1.5em;
-  font-family: arial;
-  color: #000;
-  margin: 20px 0px 0px 0px;
+font-size: 1.5em;
+font-family: arial;
+color: #000;
+margin: 20px 0px 0px 0px;
 }
 .forgot-label{
-  color: #e68a01;
-  cursor: pointer;
+color: #e68a01;
+cursor: pointer;
 }
 .fa-user{
-  position: absolute;
-  margin: 20px 1.5%;
-  color: #000;
-  z-index: -2;
+position: absolute;
+margin: 20px 1.5%;
+color: #000;
+z-index: -2;
 }
 .locker{
-  margin: 5em 0% 0em -31%;
+margin: 5em 0% 0em -31%;
 }
 #myDemo2{
-  display: none;
+display: none;
 }
 footer{
-  color: #fff;
-  background: #000;
-  text-align: center;
-  padding: 1em;
+color: #fff;
+background: #000;
+text-align: center;
+padding: 1em;
 }
 footer h3{
-  margin: 0;
+margin: 0;
 }
 
 
 /*media Querries*/
 
 @media (min-width: 320px){
-  .form_container{
-    width: 90%;
-    margin: 10vh 5%;     
+.form_container{
+width: 90%;
+margin: 10vh 5%;     
 }
-  .form_control {
-    margin: 0 0px 0px 20%;
+.form_control {
+margin: 0 0px 0px 20%;
 }
-  input[type=submit]{
-    width: 80%;
-    line-height: 3rem;
-    font-size: 1.5em;
-    background: #e68a01;
-    margin: 2rem 0rem;
+input[type=submit]{
+width: 80%;
+line-height: 3rem;
+font-size: 1.5em;
+background: #e68a01;
+margin: 2rem 0rem;
 }
-  .label{
-    font-size: 1em;
+.label{
+font-size: 1em;
 }
-    .locker{
-    margin: 5em 0% 0em -44%;
+.locker{
+margin: 5em 0% 0em -44%;
 }
-  .form_container_left{
-    width: 60%;
-    margin: 10vh 20% 4vh 20%;
-    color: #fff;
-    display: block;
+.form_container_left{
+width: 60%;
+margin: 10vh 20% 4vh 20%;
+color: #fff;
+display: block;
 }
 
-  /*navbar styling*/
-  .menu-holder{
-    width: 100%;
-    height: 100vh;
-    left: -120%;
-    top: 80px;
-    position: absolute;
-    background-color: #e68a01;
-    margin-top: 20px;
-    padding-left: 100px;
-    transition: all .5s ease-out;
-    z-index: 8;
+/*navbar styling*/
+.menu-holder{
+width: 100%;
+height: 100vh;
+left: -120%;
+top: 45px;
+position: absolute;
+background-color: #e68a01;
+margin-top: 20px;
+padding-left: 100px;
+transition: all .5s ease-out;
+z-index: 8;
 }
-  nav{
-    padding: 0px;
+nav{
+padding: 0px;
 }
-  .logo{
-    width: 30%;
+.logo{
+width: 30%;
 }
-  #barsbtn{
-    display: block;
-    color: #e68a01;
+#barsbtn{
+display: block;
+color: #e68a01;
 }
-  .menu-holder ul ul{
-    position: relative;
+.menu-holder ul ul{
+position: relative;
 }
-  .menu-holder ul li{
-    display: block;
-    float: none;
-  }
-  .menu-holder ul li a{
-    font-size: 18px;
-    line-height: 40px;
-    color: #fff;
+.menu-holder ul li{
+display: block;
+float: none;
 }
-  #check:checked ~ .menu-holder{
-    display: block;
-    left: -10px;
+.menu-holder ul li a{
+font-size: 18px;
+line-height: 40px;
+color: #fff;
 }
-  #btn-btn{
-  width: 50%;
-  }
+#check:checked ~ .menu-holder{
+display: block;
+left: -10px;
+}
+#btn-btn{
+width: 50%;
+}
 }
 
 @media (min-width: 620px){
-  .form_container{
-    width: 80%;
-    margin: 10vh 10%; 
+.form_container{
+width: 80%;
+margin: 10vh 10%; 
 }
-  .form_control {
-    margin: 0 0px 0px 20%;
+.form_control {
+margin: 0 0px 0px 20%;
 }
-  input[type=submit]{
-    width: 80%;
-    background: #e68a01;
+input[type=submit]{
+width: 80%;
+background: #e68a01;
 }
-  .register-holder{
-  transform: rotate(-90deg);
-  top: 9em;
-  left: -9em;
-  }
+.register-holder{
+transform: rotate(-90deg);
+top: 9em;
+left: -9em;
+}
 
-  /*menu bar display of block*/
-    #barsbtn{
-      display: none;
-  }
-    .menu-holder{
-    width: 60%;
-    height: 80px;
-    left: 0%;
-    background: none;
-    top: 0px;
-    position: absolute;
-    margin: 0px 0px 0px 30%;
-    padding-left: 0px;
-    text-align: right;
-  }
-  .menu-holder ul li{
-    display: inline-block;
-    width: 100px;
-  }
-  .menu-holder ul li:hover{
-    background: #e68a01;
-    border-radius: 5px;
-  }
+/*menu bar display of block*/
+#barsbtn{
+display: none;
+}
+.menu-holder{
+width: 60%;
+height: 80px;
+left: 0%;
+background: none;
+top: 0px;
+position: absolute;
+margin: 0px 0px 0px 30%;
+padding-left: 0px;
+text-align: right;
+}
+.menu-holder ul li{
+display: inline-block;
+width: 100px;
+}
+.menu-holder ul li:hover{
+background: #e68a01;
+border-radius: 5px;
+}
 }
 
 @media (min-width: 800px){
-  .form_container{
-    width: 60%;
-    margin: 10vh 20%;
-  }
-  .locker{
-    margin: 5em 0% 0em -32%;
-  }
+.form_container{
+width: 60%;
+margin: 10vh 20%;
+}
+.locker{
+margin: 5em 0% 0em -32%;
+}
 }
 
 @media (min-width: 1020px){
-  .fluid-all::after{
-    content: "";
-    display: block;
-    clear: both;
-  }
-  .form_container{
-    width: 40%;
-    margin: 10vh 5%; 
-    float: right;
-    background: #fff;
-    color: #fff;
-  }
-  .form_control {
-    margin: 0 0px 0px 5%;
-  }
-  input[type=submit]{
-    width: 30%;
-    background: #e68a01;
-    margin-left: 0%;
-    border-radius: 5px;
-    font-size: 1em;
-  }
-  input[type=submit]:hover {
-    background: #926522;
-    color: #fff;
-  }
-  input[type=email], input[type=password]{
-    border-radius: 1em;
-    width: 95%; 
-  }
-  .locker{
-    margin: 5em 0% 0em -31%;
+.fluid-all::after{
+content: "";
+display: block;
+clear: both;
+}
+.form_container{
+width: 40%;
+margin: 10vh 5%; 
+float: right;
+background: #fff;
+color: #fff;
+}
+.form_control {
+margin: 0 0px 0px 5%;
+}
+input[type=submit]{
+width: 30%;
+background: #e68a01;
+margin-left: 0%;
+border-radius: 5px;
+font-size: 1em;
+}
+input[type=submit]:hover {
+background: #926522;
+color: #fff;
+}
+input[type=email], input[type=password]{
+border-radius: 1em;
+width: 95%; 
+}
+.locker{
+margin: 5em 0% 0em -31%;
 
-  }
-  .form_container_left{
-    width: 40%;
-    margin: 9em  3em;
-    display: block;
-  }
- }
+}
+.form_container_left{
+width: 40%;
+margin: 9em  3em;
+display: block;
+}
+}
