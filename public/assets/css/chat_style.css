@@ -29,19 +29,19 @@
 .logo2 img{
   height: 50px;
 }
-
-
 .chat-bars{
   color: #fff;
   font-size: 2em;
   border: 2px solid #fff;
   padding: 5px;
   border-radius: 5px;
+  cursor: pointer;
 }
 .chat-nav{
   display: block;
   background: #fff;
   width: 100%;
+  position: fixed;
   /*transition: 5s ease-out;*/
   /*position: absolute;
   top: 6.2em;*/
@@ -81,7 +81,6 @@
 }
 .notification-stat-main{
   background: #dedee0;
-  /*position: absolute;*/
   width: 90%;
   /*position: absolute;
   top: 35em;*/
