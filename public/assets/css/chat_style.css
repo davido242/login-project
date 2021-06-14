@@ -82,8 +82,8 @@
 .notification-stat-main{
   background: #dedee0;
   width: 90%;
-  /*position: absolute;
-  top: 35em;*/
+  /*position: absolute;*/
+  top: 3em;
   padding: 0.5em;
 }
 .chat-nav, .mystyle ~ .notification-stat-main{
@@ -211,6 +211,9 @@
   .notification-stat-items{
     margin-top: 12px;
   }
+  /*.finish{
+    margin-top: 5em;
+  }*/
 }
 
 @media (min-width: 981px){
@@ -247,15 +250,16 @@
     margin: 2em 0px;
   }
   .notification-stat{
-    width: 100%;
+    width: 80%;
     border-radius: 0px;
-    margin: 0;
+    margin: 0 0% 0% 20%;
     text-align: left;
     line-height: 2em;
   }
   .notification-stat-items{
-    width: 90%;
-    margin: 0 7% 0% 3%;
+    width: calc(100% - 20%);
+    margin: -13px 2% 0% 20%;
+    min-height: 100vh;
   }
   .notification-stat-main{
     width: auto;

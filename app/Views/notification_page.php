@@ -10,7 +10,7 @@
     <?php echo view("piller/menu_nav_bar")?>
     <!-- notification section -->
     <div class="notification-stat-main">
-      <div class="notification-stat">
+      <div class="notification-stat finish">
         <i class="fa fa-bell note-bars"></i><a href="#">Notifications</a>
       </div>
       <div class="notification-stat notification-stat-items">
